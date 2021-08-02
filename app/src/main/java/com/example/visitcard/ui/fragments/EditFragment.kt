@@ -36,6 +36,7 @@ class EditFragment : Fragment() {
 
         findNavController().currentBackStackEntry?.savedStateHandle?.getLiveData<String>("data")?.observe(viewLifecycleOwner) { result ->
             binding.editFragmentColorPicker.background.setTint(Color.parseColor(result))
+            binding.editFragmentColorHex.text = result
         }
 
         setClickListeners()
@@ -56,7 +57,7 @@ class EditFragment : Fragment() {
         builder.create().show()
     }
 
-    fun setInputWithArgs() {
+    private fun setInputWithArgs() {
         binding.editFragmentInputName.editText?.setText(args.card.name)
         binding.editFragmentInputEmail.editText?.setText(args.card.email)
         binding.editFragmentInputTelephone.editText?.setText(args.card.tel)
@@ -64,7 +65,8 @@ class EditFragment : Fragment() {
         binding.editFragmentColorPicker.background.setTint(Color.parseColor(args.card.color))
     }
 
-    fun updateCard() {
+    private fun updateCard() {
+        val id = args.card.id
         val name = binding.editFragmentInnerName.text.toString()
         val tel = binding.editFragmentInnerTel.text.toString()
         val email = binding.editFragmentInnerEmail.text.toString()
@@ -76,10 +78,11 @@ class EditFragment : Fragment() {
             return
         }
 
-        mCardViewModel.updateCard(Card(0, name, tel, email, business, color))
+        mCardViewModel.updateCard(Card(id, name, tel, email, business, color))
+        findNavController().navigateUp()
     }
 
-    fun setClickListeners() {
+    private fun setClickListeners() {
         binding.editFragmentBtnClose.setOnClickListener {
             findNavController().navigateUp()
         }
