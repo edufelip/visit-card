@@ -1,5 +1,6 @@
 package com.example.visitcard.ui.fragments
 
+import android.opengl.Visibility
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -37,6 +38,11 @@ class ListFragment : Fragment() {
         mCardViewModel = ViewModelProvider(this).get(CardViewModel::class.java)
         mCardViewModel.cardList.observe(viewLifecycleOwner, { cards ->
             adapter.setCardList(cards)
+            if(cards.isEmpty()) {
+                binding.noImageContainer.visibility = View.VISIBLE
+            } else {
+                binding.noImageContainer.visibility = View.GONE
+            }
         })
 
         setClickListeners()

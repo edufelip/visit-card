@@ -1,8 +1,10 @@
 package com.example.visitcard.ui.adapters
 
 import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.graphics.alpha
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.visitcard.databinding.RecyclerBusinessCardBinding
@@ -18,7 +20,12 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
             itemBinding.itemEmail.text = card.email
             itemBinding.itemTelephone.text = card.tel
             itemBinding.itemBusiness.text = card.business
-            itemBinding.cardContainer.background.setTint(Color.parseColor(card.color))
+            val gradient = "#95${card.color.split("#")[1]}"
+            val gd = GradientDrawable(
+                GradientDrawable.Orientation.TOP_BOTTOM, intArrayOf(Color.parseColor(card.color), Color.parseColor(gradient))
+            )
+            gd.cornerRadius = 32f
+            itemBinding.cardContainer.background = gd
             itemBinding.cardContainer.setOnClickListener {
                 val action = ListFragmentDirections.actionListFragmentToEditFragment(card)
                 Navigation.findNavController(itemBinding.root).navigate(action)
