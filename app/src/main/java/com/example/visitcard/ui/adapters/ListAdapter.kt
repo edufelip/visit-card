@@ -1,5 +1,6 @@
 package com.example.visitcard.ui.adapters
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.navigation.Navigation
@@ -17,6 +18,7 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
             itemBinding.itemEmail.text = card.email
             itemBinding.itemTelephone.text = card.tel
             itemBinding.itemBusiness.text = card.business
+            itemBinding.cardContainer.background.setTint(Color.parseColor(card.color))
             itemBinding.cardContainer.setOnClickListener {
                 val action = ListFragmentDirections.actionListFragmentToEditFragment(card)
                 Navigation.findNavController(itemBinding.root).navigate(action)

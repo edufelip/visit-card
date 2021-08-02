@@ -26,7 +26,7 @@ class ColorPickerFragment : Fragment(){
         recyclerview.adapter = adapter
         recyclerview.layoutManager = GridLayoutManager(requireContext(), 3)
 
-        adapter.setColorList(listOf("#121424", "#524851", "#852741", "#784532", "#568274"))
+        adapter.setColorList(listOf("#145DA0", "#0C2D48", "#821D30", "#E43D40", "#F85C70", "#DC9750", "#922C40", "#345351", "#138B83"))
 
         setClickListeners()
         return view

@@ -30,6 +30,7 @@ class AddFragment : Fragment() {
 
         findNavController().currentBackStackEntry?.savedStateHandle?.getLiveData<String>("data")?.observe(viewLifecycleOwner) { result ->
             binding.addFragmentColorPicker.background.setTint(Color.parseColor(result))
+            binding.addFragmentColorHex.text = result
         }
 
         mCardViewModel = ViewModelProvider(this).get(CardViewModel::class.java)

@@ -37,6 +37,5 @@ class ColorAdapter(): RecyclerView.Adapter<ColorAdapter.MyViewHolder>() {
 
     fun setColorList(colors: List<String>) {
         this.colorList = colors
-        notifyDataSetChanged()
     }
 }
