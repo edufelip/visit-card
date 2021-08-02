@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/edu_f/Desktop/AndroidProjects/visitcard/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.240625" />
         <entry key="..\:/Users/edu_f/Desktop/AndroidProjects/visitcard/app/src/main/res/layout/activity_main.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/edu_f/Desktop/AndroidProjects/visitcard/app/src/main/res/layout/fragment_add.xml" value="0.25" />
         <entry key="..\:/Users/edu_f/Desktop/AndroidProjects/visitcard/app/src/main/res/layout/fragment_color_picker.xml" value="0.22447916666666667" />
