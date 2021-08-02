@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">VisitCard</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="novo_cart_o">Novo Cartão</string>
+    <string name="nome">Nome</string>
+    <string name="telefone">Telefone</string>
+    <string name="e_mail">E-mail</string>
+    <string name="empresa">Empresa</string>
+    <string name="color">Color:</string>
+    <string name="criar">Criar</string>
+    <string name="escolha_a_cor">Escolha a cor</string>
+    <string name="editar_cart_o">Editar Cartão</string>
+    <string name="cor_do_cart_o">Cor do Cartão</string>
+    <string name="_145da0">#145DA0</string>
+    <string name="salvar">Salvar</string>
+    <string name="button">Button</string>
+    <string name="bot_o_de_fechar">botão de fechar</string>
+    <string name="botao_de_excluir">botao de excluir</string>
+    <string name="botao_adicionar">botao adicionar</string>
 </resources>

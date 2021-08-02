@@ -14,6 +14,7 @@
         android:layout_marginStart="8dp"
         android:background="?attr/actionBarItemBackground"
         android:src="@drawable/ic_close"
+        android:contentDescription="@string/bot_o_de_fechar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
@@ -25,7 +26,7 @@
         android:layout_marginTop="8dp"
         android:textStyle="bold"
         android:textSize="24sp"
-        android:text="Novo Cartão"
+        android:text="@string/novo_cart_o"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/add_fragment_btn_close"
@@ -36,7 +37,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Nome"
+        android:hint="@string/nome"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +47,8 @@
             android:id="@+id/add_fragment_inner_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:inputType="textPersonName|text" />
+            android:inputType="textPersonName|text"
+            tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -55,7 +57,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Telefone"
+        android:hint="@string/telefone"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +76,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="E-mail"
+        android:hint="@string/e_mail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +95,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Empresa"
+        android:hint="@string/empresa"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -124,7 +126,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Color: "
+            android:text="@string/cor_do_cart_o"
             android:textSize="16sp"
             android:layout_marginStart="12dp" />
 
@@ -134,7 +136,7 @@
             android:layout_height="80dp"
             android:clickable="true"
             android:focusable="true"
-            android:backgroundTint="@android:color/holo_blue_dark"
+            android:backgroundTint="#145DA0"
             app:background="?attr/selectableItemBackgroundBorderless"
             app:cardCornerRadius="14dp"
             android:layout_marginStart="16dp"
@@ -145,7 +147,7 @@
                 android:id="@+id/add_fragment_color_hex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#4BABDE"
+                android:text="@string/_145da0"
                 android:textColor="@color/white"
                 android:layout_gravity="bottom|end"
                 android:layout_marginEnd="4dp"
@@ -159,7 +161,7 @@
         android:id="@+id/add_fragment_btn"
         android:layout_width="160dp"
         android:layout_height="56dp"
-        android:text="Create"
+        android:text="@string/criar"
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@id/add_fragment_color_container"
         app:layout_constraintLeft_toLeftOf="parent"
