@@ -1,8 +1,8 @@
-## BusinessCard (Inter Bootcamp Digital Innovation One)
+## VisitCard (Inter Bootcamp Digital Innovation One)
 [![Author](https://img.shields.io/static/v1?label=@author&message=Eduardo%20Santos&color=navy)](https://github.com/edufelip)
 [![LinkedIn](https://img.shields.io/static/v1?label=@linkedin&message=@edu_santos&color=blue)](https://www.linkedin.com/in/eduardo-felipe-dev/)
 
-Um aplicativo de cartões de contato para Android que permite ao usuário criar, editar e excluir cartões. Construído utilizando:
+Um aplicativo de cartões de visita para Android que permite ao usuário criar, editar e excluir cartões. Construído utilizando:
 
 - Kotlin
 - Coroutines
