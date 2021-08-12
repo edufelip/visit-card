@@ -1,4 +1,4 @@
-package com.example.visitcard.domain.models
+package com.example.visitcard.models
 
 import android.os.Parcelable
 import androidx.room.Entity

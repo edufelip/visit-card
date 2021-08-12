@@ -1,6 +1,5 @@
 package com.example.visitcard.ui.fragments
 
-import android.opengl.Visibility
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,7 +11,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.visitcard.R
 import com.example.visitcard.ui.adapters.ListAdapter
 import com.example.visitcard.databinding.FragmentListBinding
-import com.example.visitcard.domain.models.Card
 import com.example.visitcard.ui.viewmodel.CardViewModel
 
 class ListFragment : Fragment() {

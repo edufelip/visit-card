@@ -2,7 +2,7 @@ package com.example.visitcard.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.example.visitcard.domain.models.Card
+import com.example.visitcard.models.Card
 
 @Dao
 interface CardDao {

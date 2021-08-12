@@ -4,11 +4,10 @@ import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.graphics.alpha
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.example.visitcard.databinding.RecyclerBusinessCardBinding
-import com.example.visitcard.domain.models.Card
+import com.example.visitcard.models.Card
 import com.example.visitcard.ui.fragments.ListFragmentDirections
 
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {

@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.visitcard.R
 import com.example.visitcard.databinding.FragmentAddBinding
-import com.example.visitcard.domain.models.Card
+import com.example.visitcard.models.Card
 import com.example.visitcard.ui.viewmodel.CardViewModel
 import com.example.visitcard.ui.utils.MyMaskEditText
 

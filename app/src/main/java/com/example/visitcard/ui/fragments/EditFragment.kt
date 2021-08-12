@@ -8,13 +8,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.cardview.widget.CardView
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.visitcard.R
 import com.example.visitcard.databinding.FragmentEditBinding
-import com.example.visitcard.domain.models.Card
+import com.example.visitcard.models.Card
 import com.example.visitcard.ui.viewmodel.CardViewModel
 
 class EditFragment : Fragment() {

@@ -5,19 +5,20 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import com.example.visitcard.data.CardDatabase
-import com.example.visitcard.domain.models.Card
-import com.example.visitcard.domain.repository.CardRepository
+import com.example.visitcard.models.Card
+import com.example.visitcard.repository.CardRepository
+import com.example.visitcard.repository.ICardRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class CardViewModel(application: Application): AndroidViewModel(application) {
     val cardList: LiveData<List<Card>>
-    private val repo: CardRepository
+    private val repo: ICardRepository
 
     init {
         val cardDao = CardDatabase.getDatabase(application).cardDao()
         repo = CardRepository(cardDao)
-        cardList = repo.listCards
+        cardList = repo.listCards()
     }
 
     fun addCard(card: Card) {
